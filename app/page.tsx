@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import ContactModal from './components/ContactModal';
 import YouTubeModal from './components/YouTubeModal';
+import Navbar from './components/Navbar';
 
 export default function Home() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -13,38 +14,7 @@ export default function Home() {
   return (
     <div className='min-h-screen bg-black text-white'>
       {/* Navigation */}
-      <nav className='fixed top-0 w-full z-50 backdrop-blur-sm bg-black/50 border-b border-zinc-800'>
-        <div className='max-w-7xl mx-auto px-6 py-4 flex justify-between items-center'>
-          <div className='text-2xl font-bold'>
-            <span className='bg-linear-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent'>
-              mythic
-            </span>
-            <span className='bg-linear-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent'>
-              HOOK
-            </span>
-          </div>
-          <div className='flex gap-6 items-center'>
-            <a
-              href='#features'
-              className='text-zinc-300 hover:text-white transition-colors'
-            >
-              Features
-            </a>
-            <a
-              href='#pricing'
-              className='text-zinc-300 hover:text-white transition-colors'
-            >
-              Pricing
-            </a>
-            <button
-              onClick={() => setIsContactModalOpen(true)}
-              className='px-6 py-2 bg-linear-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:opacity-90 transition-opacity'
-            >
-              Get Started
-            </button>
-          </div>
-        </div>
-      </nav>
+      <Navbar onOpenContactModal={() => setIsContactModalOpen(true)} />
 
       {/* Hero Section */}
       <section className='pt-32 pb-20 px-6'>
