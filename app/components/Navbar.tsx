@@ -19,14 +19,14 @@ export default function Navbar({ onOpenContactModal }: NavbarProps) {
 
   return (
     <>
-      <nav className='fixed top-0 w-full z-50 backdrop-blur-sm bg-black/50 border-b border-zinc-800'>
+      <nav className='fixed top-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50'>
         <div className='max-w-7xl mx-auto px-6 py-4 flex justify-between items-center'>
           {/* Logo */}
           <div className='text-2xl font-bold'>
-            <span className='bg-linear-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent'>
+            <span className='bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
               mythic
             </span>
-            <span className='bg-linear-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent'>
+            <span className='bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent'>
               HOOK
             </span>
           </div>
@@ -35,19 +35,19 @@ export default function Navbar({ onOpenContactModal }: NavbarProps) {
           <div className='hidden sm:flex gap-6 items-center'>
             <a
               href='#features'
-              className='text-zinc-300 hover:text-white transition-colors'
+              className='text-slate-300 hover:text-emerald-400 transition-colors font-medium'
             >
-              Features
+              Services
             </a>
             <a
               href='#pricing'
-              className='text-zinc-300 hover:text-white transition-colors'
+              className='text-slate-300 hover:text-emerald-400 transition-colors font-medium'
             >
               Pricing
             </a>
             <button
               onClick={onOpenContactModal}
-              className='px-6 py-2 bg-linear-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:opacity-90 transition-opacity'
+              className='px-6 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 hover:scale-105'
             >
               Get Started
             </button>
@@ -94,19 +94,19 @@ export default function Navbar({ onOpenContactModal }: NavbarProps) {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className='sm:hidden fixed inset-0 top-[73px] bg-zinc-900 z-40 overflow-y-auto'>
+        <div className='sm:hidden fixed inset-0 top-[73px] bg-slate-900 z-40 overflow-y-auto border-t border-slate-800'>
           <div className='px-6 py-4 space-y-4'>
             <a
               href='#features'
               onClick={closeMobileMenu}
-              className='block text-zinc-300 hover:text-white transition-colors py-2'
+              className='block text-slate-300 hover:text-emerald-400 transition-colors py-3 font-medium'
             >
-              Features
+              Services
             </a>
             <a
               href='#pricing'
               onClick={closeMobileMenu}
-              className='block text-zinc-300 hover:text-white transition-colors py-2'
+              className='block text-slate-300 hover:text-emerald-400 transition-colors py-3 font-medium'
             >
               Pricing
             </a>
@@ -115,7 +115,7 @@ export default function Navbar({ onOpenContactModal }: NavbarProps) {
                 closeMobileMenu();
                 onOpenContactModal();
               }}
-              className='w-full px-6 py-3 bg-linear-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:opacity-90 transition-opacity'
+              className='w-full px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-emerald-500/20 transition-all'
             >
               Get Started
             </button>
