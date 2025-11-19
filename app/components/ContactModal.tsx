@@ -11,12 +11,10 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<
-    'idle' | 'success' | 'error'
-  >('idle');
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,9 +25,9 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
 
       const data = await response.json();
@@ -54,12 +52,10 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
     }
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -74,11 +70,11 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
       />
 
       {/* Modal */}
-      <div className='relative bg-slate-900 border border-slate-700 rounded-2xl p-8 max-w-md w-full shadow-2xl'>
+      <div className='relative bg-zinc-900 border border-zinc-800 rounded-2xl p-8 max-w-md w-full shadow-2xl'>
         {/* Close button */}
         <button
           onClick={onClose}
-          className='absolute top-4 right-4 text-slate-400 hover:text-white transition-colors'
+          className='absolute top-4 right-4 text-zinc-400 hover:text-white transition-colors'
         >
           <svg
             className='w-6 h-6'
@@ -97,11 +93,11 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
         {/* Header */}
         <h2 className='text-3xl font-bold mb-2'>
-          <span className='bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
+          <span className='bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>
             Get in Touch
           </span>
         </h2>
-        <p className='text-slate-400 mb-6'>
+        <p className='text-zinc-400 mb-6'>
           Fill out the form below and we&apos;ll get back to you within 24 hours
         </p>
 
@@ -119,7 +115,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               value={formData.name}
               onChange={handleChange}
               required
-              className='w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors'
+              className='w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:border-purple-500 transition-colors'
               placeholder='Your name'
             />
           </div>
@@ -136,7 +132,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               value={formData.email}
               onChange={handleChange}
               required
-              className='w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors'
+              className='w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:border-purple-500 transition-colors'
               placeholder='your.email@example.com'
             />
           </div>
@@ -153,7 +149,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               onChange={handleChange}
               required
               rows={4}
-              className='w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors resize-none'
+              className='w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:border-cyan-500 transition-colors resize-none'
               placeholder='Tell us about your project...'
             />
           </div>
@@ -162,7 +158,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
           <button
             type='submit'
             disabled={isSubmitting}
-            className='w-full px-6 py-3 bg-linear-to-r from-emerald-500 to-teal-600 rounded-lg font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed'
+            className='w-full px-6 py-3 bg-linear-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed'
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>

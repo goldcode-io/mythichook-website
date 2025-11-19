@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 interface NavbarProps {
@@ -22,32 +23,53 @@ export default function Navbar({ onOpenContactModal }: NavbarProps) {
       <nav className='fixed top-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50'>
         <div className='max-w-7xl mx-auto px-6 py-4 flex justify-between items-center'>
           {/* Logo */}
-          <div className='text-2xl font-bold'>
-            <span className='bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
+          <Link
+            href='/'
+            className='text-2xl font-bold hover:opacity-80 transition-opacity'
+          >
+            <span className='bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>
               mythic
             </span>
-            <span className='bg-linear-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent'>
+            <span className='bg-linear-to-r from-pink-400 to-purple-600 bg-clip-text text-transparent'>
               HOOK
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className='hidden sm:flex gap-6 items-center'>
             <a
-              href='#features'
-              className='text-slate-300 hover:text-emerald-400 transition-colors font-medium'
+              href='/services'
+              className='text-slate-300 hover:text-purple-400 transition-colors font-medium'
             >
-              Services
+              Videos
             </a>
             <a
-              href='#pricing'
-              className='text-slate-300 hover:text-emerald-400 transition-colors font-medium'
+              href='/shopify'
+              className='text-slate-300 hover:text-purple-400 transition-colors font-medium'
             >
-              Pricing
+              Shopify
+            </a>
+            <a
+              href='/advertising'
+              className='text-slate-300 hover:text-purple-400 transition-colors font-medium'
+            >
+              Advertising
+            </a>
+            <a
+              href='/about'
+              className='text-slate-300 hover:text-purple-400 transition-colors font-medium'
+            >
+              About
+            </a>
+            <a
+              href='/contact'
+              className='text-slate-300 hover:text-purple-400 transition-colors font-medium'
+            >
+              Contact
             </a>
             <button
               onClick={onOpenContactModal}
-              className='px-6 py-2.5 bg-linear-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 hover:scale-105'
+              className='px-6 py-2.5 bg-linear-to-r from-purple-600 to-pink-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 hover:scale-105'
             >
               Get Started
             </button>
@@ -97,25 +119,46 @@ export default function Navbar({ onOpenContactModal }: NavbarProps) {
         <div className='sm:hidden fixed inset-0 top-[73px] bg-slate-900 z-40 overflow-y-auto border-t border-slate-800'>
           <div className='px-6 py-4 space-y-4'>
             <a
-              href='#features'
+              href='/services'
               onClick={closeMobileMenu}
-              className='block text-slate-300 hover:text-emerald-400 transition-colors py-3 font-medium'
+              className='block text-slate-300 hover:text-purple-400 transition-colors py-3 font-medium'
             >
-              Services
+              Videos
             </a>
             <a
-              href='#pricing'
+              href='/shopify'
               onClick={closeMobileMenu}
-              className='block text-slate-300 hover:text-emerald-400 transition-colors py-3 font-medium'
+              className='block text-slate-300 hover:text-purple-400 transition-colors py-3 font-medium'
             >
-              Pricing
+              Shopify
+            </a>
+            <a
+              href='/advertising'
+              onClick={closeMobileMenu}
+              className='block text-slate-300 hover:text-purple-400 transition-colors py-3 font-medium'
+            >
+              Advertising
+            </a>
+            <a
+              href='/about'
+              onClick={closeMobileMenu}
+              className='block text-slate-300 hover:text-purple-400 transition-colors py-3 font-medium'
+            >
+              About
+            </a>
+            <a
+              href='/contact'
+              onClick={closeMobileMenu}
+              className='block text-slate-300 hover:text-purple-400 transition-colors py-3 font-medium'
+            >
+              Contact
             </a>
             <button
               onClick={() => {
                 closeMobileMenu();
                 onOpenContactModal();
               }}
-              className='w-full px-6 py-3 bg-linear-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-emerald-500/20 transition-all'
+              className='w-full px-6 py-3 bg-linear-to-r from-purple-600 to-pink-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-purple-500/20 transition-all'
             >
               Get Started
             </button>
