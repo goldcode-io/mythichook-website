@@ -19,7 +19,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className='relative pt-32 pb-24 px-6 overflow-hidden'>
         {/* Background Elements */}
-        <div className='absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950/30 -z-10' />
+        <div className='absolute inset-0 bg-linear-to-br from-slate-950 via-slate-900 to-emerald-950/30 -z-10' />
         <div className='absolute top-1/4 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl -z-10' />
         <div className='absolute bottom-0 left-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl -z-10' />
 
@@ -33,7 +33,7 @@ export default function Home() {
               </div>
               <h1 className='text-5xl md:text-7xl font-bold mb-6 leading-[1.1]'>
                 Transform Your Brand Into a
-                <span className='block mt-2 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
+                <span className='block mt-2 bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
                   Content Powerhouse
                 </span>
               </h1>
@@ -45,7 +45,7 @@ export default function Home() {
               <div className='flex gap-4 flex-wrap'>
                 <button
                   onClick={() => setIsContactModalOpen(true)}
-                  className='px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold text-lg hover:shadow-xl hover:shadow-emerald-500/20 transition-all duration-300 hover:scale-105'
+                  className='px-8 py-4 bg-linear-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold text-lg hover:shadow-xl hover:shadow-emerald-500/20 transition-all duration-300 hover:scale-105'
                 >
                   Start Your Growth Journey
                 </button>
@@ -63,9 +63,7 @@ export default function Home() {
                   <div className='text-3xl md:text-4xl font-bold text-emerald-400 mb-1'>
                     5M+
                   </div>
-                  <div className='text-sm text-slate-400'>
-                    Views Generated
-                  </div>
+                  <div className='text-sm text-slate-400'>Views Generated</div>
                 </div>
                 <div>
                   <div className='text-3xl md:text-4xl font-bold text-amber-400 mb-1'>
@@ -88,11 +86,11 @@ export default function Home() {
             <div className='relative hidden lg:block'>
               <div className='relative w-full aspect-square'>
                 {/* Decorative Elements */}
-                <div className='absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-3xl rotate-6 blur-xl' />
-                <div className='relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-slate-700 shadow-2xl'>
+                <div className='absolute inset-0 bg-linear-to-br from-emerald-500/20 to-teal-500/20 rounded-3xl rotate-6 blur-xl' />
+                <div className='relative bg-linear-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-slate-700 shadow-2xl'>
                   <div className='space-y-4'>
                     {/* Mock Video Player */}
-                    <div className='aspect-video bg-gradient-to-br from-emerald-900/30 to-teal-900/30 rounded-xl border border-emerald-500/20 flex items-center justify-center'>
+                    <div className='aspect-video bg-linear-to-br from-emerald-900/30 to-teal-900/30 rounded-xl border border-emerald-500/20 flex items-center justify-center'>
                       <div className='w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/50'>
                         <svg
                           className='w-8 h-8 text-white ml-1'
@@ -110,7 +108,7 @@ export default function Home() {
                           Engagement
                         </div>
                         <div className='flex-1 h-2 bg-slate-700 rounded-full overflow-hidden'>
-                          <div className='h-full w-[92%] bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full' />
+                          <div className='h-full w-[92%] bg-linear-to-r from-emerald-500 to-teal-500 rounded-full' />
                         </div>
                         <div className='text-xs font-semibold text-emerald-400'>
                           92%
@@ -119,7 +117,7 @@ export default function Home() {
                       <div className='flex items-center gap-3'>
                         <div className='text-xs text-slate-400 w-20'>Reach</div>
                         <div className='flex-1 h-2 bg-slate-700 rounded-full overflow-hidden'>
-                          <div className='h-full w-[87%] bg-gradient-to-r from-amber-500 to-orange-500 rounded-full' />
+                          <div className='h-full w-[87%] bg-linear-to-r from-amber-500 to-orange-500 rounded-full' />
                         </div>
                         <div className='text-xs font-semibold text-amber-400'>
                           87%
@@ -130,7 +128,7 @@ export default function Home() {
                           Conversion
                         </div>
                         <div className='flex-1 h-2 bg-slate-700 rounded-full overflow-hidden'>
-                          <div className='h-full w-[95%] bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full' />
+                          <div className='h-full w-[95%] bg-linear-to-r from-emerald-500 to-teal-500 rounded-full' />
                         </div>
                         <div className='text-xs font-semibold text-emerald-400'>
                           95%
@@ -154,7 +152,7 @@ export default function Home() {
             </div>
             <h2 className='text-4xl md:text-5xl font-bold mb-4'>
               Everything You Need to
-              <span className='block mt-2 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
+              <span className='block mt-2 bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
                 Dominate Your Market
               </span>
             </h2>
@@ -167,9 +165,9 @@ export default function Home() {
           {/* Bento Box Grid */}
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
             {/* Feature 1 - Large */}
-            <div className='lg:col-span-2 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 group'>
+            <div className='lg:col-span-2 bg-linear-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 group'>
               <div className='flex items-start gap-4'>
-                <div className='w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300'>
+                <div className='w-14 h-14 bg-linear-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-2xl shrink-0 group-hover:scale-110 transition-transform duration-300'>
                   ✍️
                 </div>
                 <div>
@@ -198,13 +196,11 @@ export default function Home() {
             </div>
 
             {/* Feature 2 */}
-            <div className='bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300 group'>
-              <div className='w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform duration-300'>
+            <div className='bg-linear-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300 group'>
+              <div className='w-14 h-14 bg-linear-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform duration-300'>
                 📊
               </div>
-              <h3 className='text-2xl font-bold mb-3'>
-                Analytics & Insights
-              </h3>
+              <h3 className='text-2xl font-bold mb-3'>Analytics & Insights</h3>
               <p className='text-slate-400 leading-relaxed'>
                 Data-driven reports with actionable metrics. Track engagement,
                 ROI, and conversions in real-time.
@@ -212,8 +208,8 @@ export default function Home() {
             </div>
 
             {/* Feature 3 */}
-            <div className='bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 group'>
-              <div className='w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform duration-300'>
+            <div className='bg-linear-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 group'>
+              <div className='w-14 h-14 bg-linear-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform duration-300'>
                 📢
               </div>
               <h3 className='text-2xl font-bold mb-3'>Paid Advertising</h3>
@@ -224,9 +220,9 @@ export default function Home() {
             </div>
 
             {/* Feature 4 - Large */}
-            <div className='lg:col-span-2 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300 group'>
+            <div className='lg:col-span-2 bg-linear-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300 group'>
               <div className='flex items-start gap-4'>
-                <div className='w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300'>
+                <div className='w-14 h-14 bg-linear-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center text-2xl shrink-0 group-hover:scale-110 transition-transform duration-300'>
                   ⚡
                 </div>
                 <div>
@@ -235,8 +231,8 @@ export default function Home() {
                   </h3>
                   <p className='text-slate-400 leading-relaxed mb-4'>
                     Time is money. Our streamlined workflows and dedicated teams
-                    ensure lightning-fast turnaround without sacrificing quality.
-                    Launch campaigns in days, not weeks.
+                    ensure lightning-fast turnaround without sacrificing
+                    quality. Launch campaigns in days, not weeks.
                   </p>
                   <div className='grid grid-cols-3 gap-4 pt-4 border-t border-slate-700'>
                     <div>
@@ -265,13 +261,11 @@ export default function Home() {
             </div>
 
             {/* Feature 5 */}
-            <div className='bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 group'>
-              <div className='w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform duration-300'>
+            <div className='bg-linear-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 group'>
+              <div className='w-14 h-14 bg-linear-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform duration-300'>
                 🎯
               </div>
-              <h3 className='text-2xl font-bold mb-3'>
-                Strategic Planning
-              </h3>
+              <h3 className='text-2xl font-bold mb-3'>Strategic Planning</h3>
               <p className='text-slate-400 leading-relaxed'>
                 Custom roadmaps built on deep market research, competitor
                 analysis, and audience insights.
@@ -279,8 +273,8 @@ export default function Home() {
             </div>
 
             {/* Feature 6 */}
-            <div className='bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300 group'>
-              <div className='w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform duration-300'>
+            <div className='bg-linear-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300 group'>
+              <div className='w-14 h-14 bg-linear-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform duration-300'>
                 🤝
               </div>
               <h3 className='text-2xl font-bold mb-3'>Dedicated Team</h3>
@@ -302,7 +296,7 @@ export default function Home() {
             </div>
             <h2 className='text-4xl md:text-5xl font-bold mb-4'>
               From First Call to
-              <span className='block mt-2 bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent'>
+              <span className='block mt-2 bg-linear-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent'>
                 Viral Success
               </span>
             </h2>
@@ -314,13 +308,13 @@ export default function Home() {
           {/* Timeline */}
           <div className='relative'>
             {/* Connecting Line */}
-            <div className='absolute top-8 left-8 right-8 h-1 bg-gradient-to-r from-emerald-500 via-amber-500 to-emerald-500 hidden md:block' />
+            <div className='absolute top-8 left-8 right-8 h-1 bg-linear-to-r from-emerald-500 via-amber-500 to-emerald-500 hidden md:block' />
 
             <div className='grid md:grid-cols-3 gap-8 md:gap-6'>
               {/* Step 1 */}
               <div className='relative'>
-                <div className='bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300'>
-                  <div className='relative w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg shadow-emerald-500/30 z-10'>
+                <div className='bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300'>
+                  <div className='relative w-16 h-16 bg-linear-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg shadow-emerald-500/30 z-10'>
                     1
                   </div>
                   <h3 className='text-2xl font-bold mb-3 text-center'>
@@ -351,8 +345,8 @@ export default function Home() {
 
               {/* Step 2 */}
               <div className='relative'>
-                <div className='bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300'>
-                  <div className='relative w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg shadow-amber-500/30 z-10'>
+                <div className='bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300'>
+                  <div className='relative w-16 h-16 bg-linear-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg shadow-amber-500/30 z-10'>
                     2
                   </div>
                   <h3 className='text-2xl font-bold mb-3 text-center'>
@@ -383,8 +377,8 @@ export default function Home() {
 
               {/* Step 3 */}
               <div className='relative'>
-                <div className='bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300'>
-                  <div className='relative w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg shadow-emerald-500/30 z-10'>
+                <div className='bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300'>
+                  <div className='relative w-16 h-16 bg-linear-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg shadow-emerald-500/30 z-10'>
                     3
                   </div>
                   <h3 className='text-2xl font-bold mb-3 text-center'>
@@ -426,7 +420,7 @@ export default function Home() {
             </div>
             <h2 className='text-4xl md:text-5xl font-bold mb-4'>
               Invest in Your
-              <span className='block mt-2 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
+              <span className='block mt-2 bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
                 Growth Journey
               </span>
             </h2>
@@ -437,7 +431,7 @@ export default function Home() {
 
           <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto'>
             {/* Starter Plan */}
-            <div className='bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-6 hover:border-slate-600 transition-all duration-300 hover:scale-[1.02]'>
+            <div className='bg-linear-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-6 hover:border-slate-600 transition-all duration-300 hover:scale-[1.02]'>
               <div className='mb-6'>
                 <h3 className='text-lg font-bold text-slate-300 mb-2'>
                   Starter
@@ -452,7 +446,7 @@ export default function Home() {
               <ul className='space-y-3 mb-8 text-sm'>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -468,7 +462,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -484,7 +478,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -500,7 +494,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -516,7 +510,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -540,8 +534,8 @@ export default function Home() {
             </div>
 
             {/* Growth Plan - Featured */}
-            <div className='bg-gradient-to-br from-emerald-900/40 to-teal-900/40 border-2 border-emerald-500/50 rounded-2xl p-6 relative hover:border-emerald-400 transition-all duration-300 hover:scale-[1.05] shadow-xl shadow-emerald-500/10'>
-              <div className='absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-4 py-1 rounded-full text-xs font-bold shadow-lg'>
+            <div className='bg-linear-to-br from-emerald-900/40 to-teal-900/40 border-2 border-emerald-500/50 rounded-2xl p-6 relative hover:border-emerald-400 transition-all duration-300 hover:scale-[1.05] shadow-xl shadow-emerald-500/10'>
+              <div className='absolute -top-3 left-1/2 transform -translate-x-1/2 bg-linear-to-r from-emerald-500 to-teal-600 text-white px-4 py-1 rounded-full text-xs font-bold shadow-lg'>
                 MOST POPULAR
               </div>
               <div className='mb-6'>
@@ -554,7 +548,7 @@ export default function Home() {
               <ul className='space-y-3 mb-8 text-sm'>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-300 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-300 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -570,7 +564,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-300 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-300 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -586,7 +580,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-300 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-300 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -602,7 +596,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-300 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-300 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -619,14 +613,14 @@ export default function Home() {
               </ul>
               <button
                 onClick={() => setIsContactModalOpen(true)}
-                className='w-full px-4 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 rounded-xl text-sm font-bold transition-all shadow-lg hover:shadow-emerald-500/20'
+                className='w-full px-4 py-3 bg-linear-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 rounded-xl text-sm font-bold transition-all shadow-lg hover:shadow-emerald-500/20'
               >
                 Get Started
               </button>
             </div>
 
             {/* Premium Plan */}
-            <div className='bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-6 hover:border-slate-600 transition-all duration-300 hover:scale-[1.02]'>
+            <div className='bg-linear-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-6 hover:border-slate-600 transition-all duration-300 hover:scale-[1.02]'>
               <div className='mb-6'>
                 <h3 className='text-lg font-bold text-slate-300 mb-2'>
                   Premium
@@ -639,7 +633,7 @@ export default function Home() {
               <ul className='space-y-3 mb-8 text-sm'>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -655,7 +649,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -671,7 +665,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -687,7 +681,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -703,7 +697,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-emerald-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -727,7 +721,7 @@ export default function Home() {
             </div>
 
             {/* Enterprise Plan */}
-            <div className='bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-6 hover:border-amber-500/50 transition-all duration-300 hover:scale-[1.02]'>
+            <div className='bg-linear-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-2xl p-6 hover:border-amber-500/50 transition-all duration-300 hover:scale-[1.02]'>
               <div className='mb-6'>
                 <h3 className='text-lg font-bold text-slate-300 mb-2'>
                   Enterprise
@@ -740,7 +734,7 @@ export default function Home() {
               <ul className='space-y-3 mb-8 text-sm'>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-amber-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -756,7 +750,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-amber-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -772,7 +766,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-amber-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -788,7 +782,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-amber-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -804,7 +798,7 @@ export default function Home() {
                 </li>
                 <li className='flex items-start gap-3'>
                   <svg
-                    className='w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5'
+                    className='w-5 h-5 text-amber-400 shrink-0 mt-0.5'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
@@ -833,7 +827,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className='relative py-32 px-6 overflow-hidden'>
         {/* Background */}
-        <div className='absolute inset-0 bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950 -z-10' />
+        <div className='absolute inset-0 bg-linear-to-br from-emerald-950 via-slate-900 to-teal-950 -z-10' />
         <div className='absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl -z-10' />
         <div className='absolute bottom-0 right-1/4 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl -z-10' />
 
@@ -843,7 +837,7 @@ export default function Home() {
           </div>
           <h2 className='text-5xl md:text-6xl font-bold mb-6 leading-tight'>
             Let&apos;s Build Your
-            <span className='block mt-2 bg-gradient-to-r from-emerald-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent'>
+            <span className='block mt-2 bg-linear-to-r from-emerald-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent'>
               Content Empire
             </span>
           </h2>
@@ -854,7 +848,7 @@ export default function Home() {
           <div className='flex gap-4 justify-center flex-wrap mb-10'>
             <button
               onClick={() => setIsContactModalOpen(true)}
-              className='px-10 py-5 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-emerald-500/30 transition-all duration-300 hover:scale-105'
+              className='px-10 py-5 bg-linear-to-r from-emerald-500 to-teal-600 rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-emerald-500/30 transition-all duration-300 hover:scale-105'
             >
               Book Your Free Strategy Call
             </button>

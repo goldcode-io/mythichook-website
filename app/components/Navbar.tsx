@@ -23,10 +23,10 @@ export default function Navbar({ onOpenContactModal }: NavbarProps) {
         <div className='max-w-7xl mx-auto px-6 py-4 flex justify-between items-center'>
           {/* Logo */}
           <div className='text-2xl font-bold'>
-            <span className='bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
+            <span className='bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
               mythic
             </span>
-            <span className='bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent'>
+            <span className='bg-linear-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent'>
               HOOK
             </span>
           </div>
@@ -47,7 +47,7 @@ export default function Navbar({ onOpenContactModal }: NavbarProps) {
             </a>
             <button
               onClick={onOpenContactModal}
-              className='px-6 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 hover:scale-105'
+              className='px-6 py-2.5 bg-linear-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 hover:scale-105'
             >
               Get Started
             </button>
@@ -115,7 +115,7 @@ export default function Navbar({ onOpenContactModal }: NavbarProps) {
                 closeMobileMenu();
                 onOpenContactModal();
               }}
-              className='w-full px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-emerald-500/20 transition-all'
+              className='w-full px-6 py-3 bg-linear-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-emerald-500/20 transition-all'
             >
               Get Started
             </button>
